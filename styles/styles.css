@@ -1,0 +1,106 @@
+body {
+    box-sizing: border-box;
+    font-size: 15px;
+    margin: 0 auto;
+    height: auto;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin: auto 25%;
+    display: flex;
+    min-width: 750px;
+    height: auto;
+}
+
+.sedans {
+    padding: 48px 48px;
+    width: 30%;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 8px 0 0 8px;
+    white-space: 32px;
+}
+
+.suvs {
+    padding: 48px 48px;
+    width: 30%;
+    background-color: hsl(184, 100%, 22%);
+    
+}
+
+.luxury {
+    padding: 48px 48px;
+    width: 30%;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 8px 8px 0;
+}
+
+h1 {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 700;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    margin-bottom: 64px;
+    line-height: 1.6rem;
+}
+
+button {
+    background-color: white;
+    border: 1px solid white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 64px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.cta-sedans {
+    color: hsl(31, 77%, 52%);
+}
+
+.cta-suvs {
+    color: hsl(184, 100%, 22%)
+}
+
+.cta-luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 750px) {
+    
+    main {
+        display: block;
+        min-width: auto;
+        margin: 20% 10%;
+    }
+
+    .sedans {
+        width: auto;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .suvs {
+        width: auto;
+    }
+
+    .luxury{
+        width: auto;
+        border-radius: 0 0 8px 8px;
+    }
+  }
